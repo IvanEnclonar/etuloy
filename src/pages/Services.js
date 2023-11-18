@@ -51,13 +51,19 @@ const Services = () => {
                           <label class="font-light text-white">Tumulong sa shipping ng produkto</label>
                         </div>
                     </div>
-                    
+                    <div class="flex items-start">
+                      <div class="text-sm w-fit">
+                        <label class="font-light text-white">Comments</label>
+                      </div>
+                    </div>
+                    <div class="flex items-start">
+                      <div class="flex items-center h-10">
+                        <textarea id="comments" class="w-comments border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-highlight_hover resize-none" required=""></textarea>
+                      </div>
+                    </div>
                     <Link to="/">
-                    <button type="submit" class="w-full text-white bg-highlight hover:bg-higlight focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm mt-4 px-5 py-2.5 text-center">Gumawa ng account</button>
+                    <button type="submit" class="w-full text-white bg-highlight hover:bg-higlight focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm mt-4 px-5 py-2.5 text-center">I-submit</button>
                     </Link>
-                    <p class="text-sm font-light text-white">
-                        May account ka na? <a href="#" class="font-medium text-primary-600 hover:underline">Login dito</a>
-                    </p>
                 </form>
             </div>
           </div>
