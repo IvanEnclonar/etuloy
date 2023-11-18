@@ -31,11 +31,11 @@ function Chat() {
     return (
     <div className="ChatApp flex items-center justify-center h-screen bg-black">
         <div className="relative h-screen w-screen">
-            <MainContainer>
+            <MainContainer style={{border: "1px solid #343541",}}>
                 <ChatContainer>
                     <MessageList
                         typingIndicator={isTyping ? <TypingIndicator content='Bossing is typing...' /> : null}
-                        style={{backgroundColor: "#343541", fontSize: "1.7rem"}}
+                        style={{backgroundColor: "#343541", fontSize: "1.2rem"}}
                         
                     >
                         {messages.map((message, i) =>{
@@ -44,7 +44,7 @@ function Chat() {
                         })}
                     </MessageList>
                     <MessageInput placeholder='Type message here' onSend={handleSend}
-                        style={{fontSize: "1.7rem", backgroundColor: "#343541"}}
+                        style={{fontSize: "1.2rem", backgroundColor: "#343541", border: "1px solid #343541",}}
                     />
                 </ChatContainer>
             </MainContainer>
