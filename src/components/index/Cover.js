@@ -14,7 +14,7 @@ class Cover extends Component {
         </p>
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <Link
-            to="/student/signup"
+            to="/signup"
             className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-black rounded-lg bg-gray-100 hover:bg-highlight hover:text-white focus:ring-4 focus:ring-gray-400"
           >
             Get started
