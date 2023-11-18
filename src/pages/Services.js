@@ -52,13 +52,13 @@ const Services = () => {
                         </div>
                     </div>
                     <div class="flex items-start">
-                      <div class="text-sm w-fit">
-                        <label class="font-light text-white">Comments</label>
+                      <div class="text-sm w-fit mb">
+                        <label class="font-semibold text-white">Comments</label>
                       </div>
                     </div>
-                    <div class="flex items-start">
-                      <div class="flex items-center h-10">
-                        <textarea id="comments" class="w-comments border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-highlight_hover resize-none" required=""></textarea>
+                    <div class="flex items-start mt-0">
+                      <div class="flex items-center">
+                        <textarea id="comments" class="h-14 w-comments border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-highlight_hover resize-none" required=""></textarea>
                       </div>
                     </div>
                     <Link to="/">
