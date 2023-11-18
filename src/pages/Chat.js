@@ -30,7 +30,7 @@ function Chat() {
 
     return (
     <div className="ChatApp flex items-center justify-center h-screen bg-black">
-        <div className="relative h-screen w-3/4">
+        <div className="relative h-screen w-screen">
             <MainContainer>
                 <ChatContainer>
                     <MessageList
