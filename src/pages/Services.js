@@ -9,10 +9,11 @@ const Services = () => {
     <div>
       <Navbar />
       <section className="bg-center bg-no-repeat bg-blend-multiply bg-background h-screen py-8">
+          <h1 className="text-center mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
+            Kami bahala sa'yo!
+          </h1>
           <div class="flex flex-col items-center justify-center px-6 mx-auto lg:py-0">
-          <a href="#" class="flex items-center mb-6 text-3xl text-white uppercase font-bold text-center">
-              Kami bahala sa'yo!   
-          </a>
+          
           <div class="w-full max-h-fit bg-highlight_hover rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <h1 class="text-xl font-semibold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
@@ -61,7 +62,7 @@ const Services = () => {
                         <textarea id="comments" class="h-14 w-comments border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-highlight_hover resize-none" required=""></textarea>
                       </div>
                     </div>
-                    <Link to="/">
+                    <Link to="/confirmed">
                     <button type="submit" class="w-full text-white bg-highlight hover:bg-higlight focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm mt-4 px-5 py-2.5 text-center">I-submit</button>
                     </Link>
                 </form>
