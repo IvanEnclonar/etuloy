@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Chat from './pages/Chat';
 import HomePage from './pages/HomePage';
+import Signup from './pages/Signup';
 import NoPage from './pages/NoPage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="chat" element={<Chat />} />
+        <Route path="signup" element={<Signup />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
