@@ -47,7 +47,7 @@ const Signup = () => {
                           <label for="terms" class="font-light text-white">Na-verify ko na tama ang impormasyon na inilagay ko.</label>
                         </div>
                     </div>
-                    <Link to="/">
+                    <Link to="/services">
                     <button type="submit" class="w-full text-white bg-highlight hover:bg-higlight focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm mt-4 px-5 py-2.5 text-center">Gumawa ng account</button>
                     </Link>
                     <p class="text-sm font-light text-white">
