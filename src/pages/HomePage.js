@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
+import Cover from "../components/index/Cover";
 
 function HomePage() {
     return (
         <div>
-            <h1>Home Page</h1>
+            <Cover />
         </div>
     );
 }
