@@ -9,9 +9,9 @@ class Cover extends Component {
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
           Ano ang Kitamo?
         </h1>
-        <img src={mainImage} className="mb-4"/>
+        <img src={mainImage} className="mb-4 h-56 w-full mx-auto"/>
         <p className="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 lg:px-48">
-          Ang Kitamo ay isang AI chatbot na makakatulong sa iyo sa iyong mga problema.
+          Ang Kitamo ay isang AI chatbot na makakatulong sa iyo sa pagsimula ng isang negosyo.
         </p>
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <Link
