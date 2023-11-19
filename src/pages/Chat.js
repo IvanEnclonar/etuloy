@@ -95,8 +95,8 @@ function Chat() {
 
     return (
     <section className="bg-center bg-no-repeat bg-blend-multiply bg-chat_bg h-screen fixed">
-        <div className="ChatApp flex items-center justify-center h-5/6 bg-chat_bg fixed">
-        <div className="bg-chat_bg relative h-full sm:h-screen w-screen overflow-auto fixed">
+        <div className="ChatApp flex items-center justify-center h-screen bg-chat_bg fixed">
+        <div className="bg-chat_bg relative h-5/6 sm:h-screen w-screen overflow-auto fixed">
             <MainContainer style={{ border: "0px solid #343541" }}>
             <ChatContainer>
                 <MessageList
