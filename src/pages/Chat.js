@@ -85,30 +85,31 @@ function Chat() {
     }
 
     return (
-        <section className="bg-center bg-no-repeat bg-blend-multiply bg-background">
-            <div className="ChatApp flex items-center justify-center h-screen bg-black">
-                <div className="relative sm:h-screen w-screen overflow-auto" style={{height: "-webkit-fill-available"}}>
-                    <MainContainer style={{ border: "0px solid #343541", }}>
-                        <ChatContainer>
-                            <MessageList
-                                typingIndicator={isTyping ? <TypingIndicator content='Nag-iisip si Bossing...' /> : null}
-                                style={{ backgroundColor: "#343541",}}
-
-                            >
-                                {messages.map((message, i) => {
-                                    return <Message key={i} model={message}
-                                    />
-                                })}
-                            </MessageList>
-                            <MessageInput placeholder='Type message here' onSend={handleSend}
-                                style={{ backgroundColor: "#343541", border: "1px solid #343541", }}
-                            />
-                        </ChatContainer>
-                    </MainContainer>
-                </div>
-            </div>
-        </section>
-        
+    <section className="bg-center bg-no-repeat bg-blend-multiply bg-background h-screen">
+        <div className="ChatApp flex items-center justify-center h-5/6 bg-black">
+        <div className="relative h-full sm:h-screen w-screen overflow-hidden">
+            <MainContainer style={{ border: "0px solid #343541" }}>
+            <ChatContainer>
+                <MessageList
+                typingIndicator={
+                    isTyping ? <TypingIndicator content="Nag-iisip si Bossing..." /> : null
+                }
+                style={{ backgroundColor: "#343541" }}
+                >
+                {messages.map((message, i) => {
+                    return <Message key={i} model={message} />;
+                })}
+                </MessageList>
+                <MessageInput
+                placeholder="Type message here"
+                onSend={handleSend}
+                style={{ backgroundColor: "#343541", border: "1px solid #343541" }}
+                />
+            </ChatContainer>
+            </MainContainer>
+        </div>
+        </div>
+    </section>
     );
 }
 
