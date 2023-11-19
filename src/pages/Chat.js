@@ -88,10 +88,16 @@ function Chat() {
             <div className="relative h-screen w-screen">
                 <MainContainer style={{ border: "1px solid #343541", }}>
                     <ChatContainer>
-                        {messages.map((message, i) => {
-                            return <Messages key={i} model={message}
-                            />
-                        })}
+                        <MessageList
+                            typingIndicator={isTyping ? <TypingIndicator content='Bossing is typing...' /> : null}
+                            style={{ backgroundColor: "white", fontSize: "1.2rem" }}
+
+                        >
+                            {messages.map((message, i) => {
+                                return <Messages key={i} model={message}
+                                />
+                            })}
+                        </MessageList>
                         <MessageInput placeholder='Type message here' onSend={handleSend}
                             style={{ fontSize: "1.2rem", backgroundColor: "#343541", border: "1px solid #343541", }}
                         />
