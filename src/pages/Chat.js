@@ -16,7 +16,7 @@ function Chat() {
             sentTime: "just now",
         }
     ]);
-    var key = '';
+    const [key, setKey] = useState('');
 
     useEffect(() => {
         // Get the current URL
@@ -25,7 +25,7 @@ function Chat() {
         // Extract the last field after "chat/"
         const lastField = currentUrl.split('/chat/')[1];
         console.log('Last field after "chat/":', lastField);
-        key = 'sk-' + lastField;
+        setKey('sk-' + lastField);
     }, []);
 
     const handleSend = async (message) => {
