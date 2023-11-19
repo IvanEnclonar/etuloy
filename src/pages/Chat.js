@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
+import Navbar from '../components/Navbar';
 
 const API_KEY = "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";
 // "Explain things like you would to a 10 year old learning how to code."
@@ -84,27 +85,30 @@ function Chat() {
     }
 
     return (
-        <div className="ChatApp flex items-center justify-center h-screen bg-black">
-            <div className="relative h-screen w-screen overflow-auto">
-                <MainContainer style={{ border: "0px solid #343541", }}>
-                    <ChatContainer>
-                        <MessageList
-                            typingIndicator={isTyping ? <TypingIndicator content='Bossing is typing...' /> : null}
-                            style={{ backgroundColor: "#343541", fontSize: "1.2rem" }}
+        <section className="bg-center bg-no-repeat bg-blend-multiply bg-background">
+            <div className="ChatApp flex items-center justify-center h-screen bg-black">
+                <div className="relative h-screen-vh h-screen-fill-available w-screen overflow-auto">
+                    <MainContainer style={{ border: "0px solid #343541", }}>
+                        <ChatContainer>
+                            <MessageList
+                                typingIndicator={isTyping ? <TypingIndicator content='Nag-iisip si Bossing...' /> : null}
+                                style={{ backgroundColor: "#343541",}}
 
-                        >
-                            {messages.map((message, i) => {
-                                return <Message key={i} model={message}
-                                />
-                            })}
-                        </MessageList>
-                        <MessageInput placeholder='Type message here' onSend={handleSend}
-                            style={{ fontSize: "1.2rem", backgroundColor: "#343541", border: "1px solid #343541", }}
-                        />
-                    </ChatContainer>
-                </MainContainer>
+                            >
+                                {messages.map((message, i) => {
+                                    return <Message key={i} model={message}
+                                    />
+                                })}
+                            </MessageList>
+                            <MessageInput placeholder='Type message here' onSend={handleSend}
+                                style={{ backgroundColor: "#343541", border: "1px solid #343541", }}
+                            />
+                        </ChatContainer>
+                    </MainContainer>
+                </div>
             </div>
-        </div>
+        </section>
+        
     );
 }
 
