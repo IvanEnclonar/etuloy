@@ -17,10 +17,6 @@ module.exports = {
       width: {
         comments: "16.5rem",
       },
-      height: {
-        'screen-vh': '100vh',
-        'screen-fill-available': '-webkit-fill-available',
-      },
     },
   },
   plugins: [],
