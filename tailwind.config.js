@@ -17,6 +17,9 @@ module.exports = {
       width: {
         comments: "16.5rem",
       },
+      height: {
+        chatapp: "70%",
+      }
     },
   },
   plugins: [],
