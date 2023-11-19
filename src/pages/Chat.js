@@ -85,8 +85,8 @@ function Chat() {
 
     return (
         <div className="ChatApp flex items-center justify-center h-screen bg-black">
-            <div className="relative h-screen w-screen">
-                <MainContainer style={{ border: "1px solid #343541", }}>
+            <div className="relative h-screen w-screen overflow-auto">
+                <MainContainer style={{ border: "0px solid #343541", }}>
                     <ChatContainer>
                         <MessageList
                             typingIndicator={isTyping ? <TypingIndicator content='Bossing is typing...' /> : null}
