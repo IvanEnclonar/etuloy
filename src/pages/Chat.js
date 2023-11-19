@@ -86,7 +86,7 @@ function Chat() {
 
     return (
         <section className="bg-center bg-no-repeat bg-blend-multiply bg-background">
-            <div className="ChatApp flex items-center justify-center h-screen bg-black m-8">
+            <div className="ChatApp flex items-center justify-center h-screen bg-black">
                 <div className="relative sm:h-screen w-screen overflow-auto" style={{height: "-webkit-fill-available"}}>
                     <MainContainer style={{ border: "0px solid #343541", }}>
                         <ChatContainer>
