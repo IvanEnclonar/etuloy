@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.css';
+import Messages from '../components/Messages';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
 const API_KEY = "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";
@@ -87,16 +88,10 @@ function Chat() {
             <div className="relative h-screen w-screen">
                 <MainContainer style={{ border: "1px solid #343541", }}>
                     <ChatContainer>
-                        <MessageList
-                            typingIndicator={isTyping ? <TypingIndicator content='Bossing is typing...' /> : null}
-                            style={{ backgroundColor: "#343541", fontSize: "1.2rem" }}
-
-                        >
-                            {messages.map((message, i) => {
-                                return <Message key={i} model={message}
-                                />
-                            })}
-                        </MessageList>
+                        {messages.map((message, i) => {
+                            return <Messages key={i} model={message}
+                            />
+                        })}
                         <MessageInput placeholder='Type message here' onSend={handleSend}
                             style={{ fontSize: "1.2rem", backgroundColor: "#343541", border: "1px solid #343541", }}
                         />
