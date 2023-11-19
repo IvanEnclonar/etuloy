@@ -12,6 +12,7 @@ module.exports = {
         background: "#51A98F",
         background_pastel: "#E8F4F0",
         required_red: "#FF0000",
+        chat_bg: "#343541",
       },
       width: {
         comments: "16.5rem",
